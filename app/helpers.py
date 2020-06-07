@@ -50,7 +50,7 @@ def get_counts():
         else:
             attachment_size = 0
 
-        return f"bw_users {users}\nbw_mfa_accounts {mfa}\nbw_organizations {org}\nbw_collections {collections}\nbw_passwords {passwords}\nbw_attachments {attachments}\nbw_db_size {db_size}\nattachment_total_size {attachment_size}"
+        return f"bw_users {users}\nbw_mfa_accounts {mfa}\nbw_organizations {org}\nbw_collections {collections}\nbw_passwords {passwords}\nbw_attachments {attachments}\nbw_db_size {db_size}\nbw_attachment_total_size {attachment_size}"
     except:
         logging.exception("Error querying DB")
         return ""
