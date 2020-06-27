@@ -1,4 +1,5 @@
-FROM tiangolo/uwsgi-nginx-flask:python3.8
+#FROM tiangolo/uwsgi-nginx-flask:python3.8
+FROM tiangolo/meinheld-gunicorn:python3.8-alpine3.11
 
 WORKDIR /app
 # install dependencies
